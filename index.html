@@ -9,15 +9,16 @@
 
     <body>
         <header>
-            <div id="logo">
+            <!--utiliser fig-->
+            <figure id="logo">
                 <img src="images/logo/Reservia.svg" alt="Logo de reservia" /> 
-            </div>
+            </figure>
 
             <nav>
                 <ul>
                     <li><a href="#hebergement">Hébergements</a></li>
                     <li><a href="#activite">Activités</a></li>
-                    <li><a href="#">S'incrire</a></li>
+                    <li><a id="signup" href="#">S'incrire</a></li>
                 </ul>
             </nav>
         </header>
@@ -27,50 +28,208 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
                 <form>
-                    <div>
-                        <input type="search" id="seach" name="q"
-                               placeholder="Rechercher sur le site…">
-                        <button>Rechercher</button>
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" id="seach" name="q"
+                           placeholder="Marseille, France">
+                    <button type="button">Rechercher</button>
                 </form>
                 <div class="searchFilters">
-                   <h2>Filtres</h2> 
+                    <h2>Filtres</h2> 
                     <i class="fas fa-money-bill-wave"></i>
                     <i class="fas fa-child"></i>
                     <i class="fas fa-heart"></i>
                     <i class="fas fa-dog"></i>
                 </div>
             </article>
+
         </section>
+        <main>
+            <section >
+                <div class="hosting">
+                    <h1>Hébergement à Marseille</h1>
+                    <div class="hostingGrid">
 
-        <section>
-            <i class="fas fa-map-marker-alt"></i>
-            <article>
-                <h1>Hébergement à Marseille</h1>
-            </article>
-            <aside>
-                <h1>Les plus populaires</h1>
-                <i class="fas fa-chart-line"></i>
-            </aside>
-        </section>
+                        <article Class="hostingCard">
+                            <!--<a href="#">-->
+                            <figure>
+                                <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                     alt="chambre auberge le Cannebière">
+                                <figcaption>Auberge le Cannebière</figcaption>
+                            </figure>
+                            <p>Nuit à partir de <strong>25€</strong></p>
+                            <div class="hostingRating">
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="false"></i>
+                            </div>
 
-        <section>
-            <article>
-                <h1>Activités à Marseille</h1>
+                            <!--</a>-->
+                        </article>
+                        <article Class="hostingCard">
+                            <!--<a href="#">-->
+                            <figure>
+                                <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                                     alt="chambre auberge le Cannebière">
+                                <figcaption>Hôtel du port</figcaption>
+                            </figure>
+                            <p>Nuit à partir de <strong>52€</strong></p>
+                            <div class="hostingRating">
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="true"></i>
+                            </div>
+                            <!--</a>-->
+                        </article>
+                        <article Class="hostingCard">
+                            <!--<a href="#">-->
+                            <figure>
+                                <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                                     alt="chambre auberge le Cannebière">
+                                <figcaption>Hôtel Les mouettes</figcaption>
+                            </figure>
+                            <p>Nuit à partir de <strong>76€</strong></p>
+                            <div class="hostingRating">
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="false"></i>
+                            </div>
+                            <!--</a>-->
+                        </article>
+                        <article Class="hostingCard">
+                            <!--<a href="#">-->
+                            <figure>
+                                <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                     alt="chambre auberge le Cannebière">
+                                <figcaption>Hôtel de la mer</figcaption>
+                            </figure>
+                            <p>Nuit à partir de <strong>46€</strong></p>
+                            <div class="hostingRating">
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="false"></i>
+                                <i class="fas fa-star" data-active="false"></i>
+                            </div>
+                            <!--</a>-->
+                        </article>
+                        <article Class="hostingCard">
+                            <!--<a href="#">-->
+                            <figure>
+                                <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                                     alt="chambre auberge le Cannebière">
+                                <figcaption>Auberge Le Panier</figcaption>
+                            </figure>
+                            <p>Nuit à partir de <strong>23€</strong></p>
+                            <div class="hostingRating">
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="false"></i>
+                            </div>
+                            <!--</a>-->
+                        </article>
+                        <article Class="hostingCard">
+                            <!--<a href="#">-->
+                            <figure>
+                                <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                                     alt="chambre auberge le Cannebière">
+                                <figcaption>Hôtel chez Amina</figcaption>
+                            </figure>
+                            <p>Nuit à partir de <strong>96€</strong></p>
+                            <div class="hostingRating">
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="true"></i>
+                            </div>
+                            <!--</a>-->
+                        </article>
+                    </div>
+                    <h2>Afficher plus</h2>
+                </div>
+                <aside>
+                    <h1>Les plus populaires</h1>
+                    <i class="fas fa-chart-line"></i>
+                    <article Class="hostingPopularCard">
+                        <!--<a href="#">-->
+                        <figure>
+                            <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                                 alt="chambre auberge le Cannebière">
+                        </figure>
+                        <div class>
+                            <p>Hôtel Le soleil de matin</p>
+                            <p>Nuit à partir de <strong>128€</strong></p>
+                            <div class="hostingRating">
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="true"></i>
+                                <i class="fas fa-star" data-active="true"></i>
+                            </div>
+                        </div>
+                        <!--</a>-->
+                    </article>
+                    <article Class="hostingPopularCard">
+                        <!--<a href="#">-->
+                        <figure>
+                            <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                                 alt="chambre auberge le Cannebière">
+                        </figure>
+                        <p>Au coeur de l'eau Chambres d'hôtes</p>
+                        <p>Nuit à partir de <strong>71€</strong></p>
+                        <div class="hostingRating">
+                            <i class="fas fa-star" data-active="true"></i>
+                            <i class="fas fa-star" data-active="true"></i>
+                            <i class="fas fa-star" data-active="true"></i>
+                            <i class="fas fa-star" data-active="true"></i>
+                            <i class="fas fa-star" data-active="false"></i>
+                        </div>
+                        <!--</a>-->
+                    </article>
+                    <article Class="hostingPopularCard">
+                        <!--<a href="#">-->
+                        <figure>
+                            <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                                 alt="chambre auberge le Cannebière">
+                        </figure>
+                        <p>Hôtel Tout bleu et blanc</p>
+                        <p>Nuit à partir de <strong>68€</strong></p>
+                        <div class="hostingRating">
+                            <i class="fas fa-star" data-active="true"></i>
+                            <i class="fas fa-star" data-active="true"></i>
+                            <i class="fas fa-star" data-active="true"></i>
+                            <i class="fas fa-star" data-active="true"></i>
+                            <i class="fas fa-star" data-active="false"></i>
+                        </div>
+                        <!--</a>-->
+                    </article>
+                </aside>
 
-            </article>
-        </section>
+            </section>
 
+            <section>
+                <article>
+                    <h1>Activités à Marseille</h1>
+
+                </article>
+            </section>
+        </main>
         <footer>
-            <div id="a-propos">  
-                <h2>À propos</h2>
-                <ul>
-                    <li><a href="#">fonctionnement du site</a></li>
-                    <li><a href="#">Condition générals de vente</a></li>
-                    <li><a href="#">Données et confidencialité</a></li>
-                </ul>
-            </div>
+            <ul>
+                <li><h2>À propos</h2></li>
+                <li><a href="#">fonctionnement du site</a></li>
+                <li><a href="#">Condition générals de vente</a></li>
+                <li><a href="#">Données et confidencialité</a></li>
+            </ul>
+
             <div id="hebergemenr">  
                 <h2>Nos hébergments</h2>
                 <ul>
