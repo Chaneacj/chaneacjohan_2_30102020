@@ -10,14 +10,14 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     background: white;
-    margin-left: 4%;
-    margin-right: 4%;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
 #logo img {
@@ -25,7 +25,9 @@ header {
 }
 
 
-/* Navigation */
+
+
+/*--------- Navigation ---------*/
 
 nav ul {
     list-style-type: none;
@@ -52,7 +54,13 @@ nav a:hover {
 
 
 
-/* Filtre */
+
+/*--------- Filtre ---------*/
+
+.filtre {
+    margin-left: 4%;
+    margin-right: 4%;
+}
 
 Form {
     max-width: 100%;
@@ -72,9 +80,33 @@ input[type=text] {
     padding: 13px 13px 13px 20px;
 }
 
+.searchFilters {
+    display: flex;
+    align-items: center;
+}
 
 
-/* Main */
+.buttonCircleFilter{
+  background: #deebff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.buttonCircleFilter i {
+    color: #0065FC;
+}
+
+
+/*--------- Main ---------*/
+
+Main {
+    margin-left: 4%;
+    margin-right: 4%;
+}
 
 figure {
     margin: 0px;
@@ -97,7 +129,6 @@ figure {
 .hostingGrid article {
     margin: 0px 0px 40px 0px;
 }
-
 
 .hostingCard {
     width: 29%;
@@ -145,6 +176,10 @@ figure {
 }
 
 
+
+
+/*--------- Aside ---------*/
+
 aside {
     float: right;
     width: 25%;
@@ -152,7 +187,13 @@ aside {
     background-color: #f2f2f2;
     border-radius: 25px 25px 25px 25px;
 }
+
 section{
+    display: flex;
+    justify-content: space-between;
+}
+
+aside h1{
     display: flex;
     justify-content: space-between;
 }
@@ -167,6 +208,7 @@ section{
     box-shadow: 0 0 16px #0000002e;
     transition-duration: 0.1s;
     cursor: pointer;
+    display: flex;   
 }
 
 .hostingPopularCard:hover {
@@ -176,11 +218,10 @@ section{
 .hostingPopularCard img {
     height: 135px;
     object-fit: cover;
-    width: 40%;
+    width: 120px;
     max-height: 100%;
     border-radius: 20px 0px 0 20px;
 }
-
 
 .hostingPopularCard p {
     margin: 7px 10px 0 10px;
@@ -189,4 +230,105 @@ section{
 .hostingRating {
     margin: 7px 10px 7px 10px;
 }
+
+.hostingPopularInfo {
+    float: right;
+}
+
+.hostingPopularGrid article {
+    margin: 0px 0px 40px 0px;
+}
+
+.hostingPopularTitle {
+    font-weight: bold;
+}
+
+
+
+
+/*--------- Activity ---------*/
+
+.activity {
+    width: 100%;
+    margin: 40px 0px 0px 0px;
+}
+
+.activityCard{
+    width: 23%;
+    height: 100%;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.activityCard:hover {
+    transform: scale(1.02);
+}
+
+.activityCard img {
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.activityCard figcaption {
+    margin: 15px 15px 15px 15px;
+    font-weight: bold;
+}
+
+
+
+
+/*--------- Footer ---------*/
+
+footer {
+    background-color: #F2F2F2;
+    width: 100%;
+    display: flex;
+    
+}
+
+footer ul {
+    width: 30%;
+    list-style-type: none; 
+    padding: 0px;
+    margin: 0% 4% 0% 4%;
+
+}
+
+footer a {
+    line-height: 35px;
+    color: #181818;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #0065FC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
