@@ -85,6 +85,7 @@ nav a:hover {
 
 Form {
     max-width: 100%;
+    display: flex;
 }
 
 .baseLine {
@@ -452,13 +453,13 @@ footer a:hover {
 
 
 
-@media (min-width: 768px) {
+@media  (min-width: 768px) {
 }
 
 
 
 
-@media (max-width: 576px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
 
     h1{
         font-size: 1.4em;
@@ -473,6 +474,72 @@ footer a:hover {
     h3 {
         font-size: 1.5em;  
     }
+
+
+
+    .searchFilters {
+        flex-wrap:wrap;
+        margin: 30px 0px 24px 0px;
+    }
+
+
+    /*--------- Main ---------*/
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0% 0% 0% 0%;
+    }
+
+
+    .hosting {
+        width: 100%;
+        padding: 4% 4% 4% 4%;
+        background-color: white;
+        border-radius: 0px 0px 0px 0px;
+        margin: 0 0 0 0;
+    }
+
+    .hostingGrid {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .hostingCard {
+        width: 100%;
+
+    }
+
+
+
+
+
+    /*--------- Aside ---------*/
+
+    aside {
+        width: 100%;
+        padding: 8% 4% 8% 4%;
+        background-color: #f2f2f2;
+        border-radius: 0px 0px 0px 0px;
+        margin: 24px 0px 0px 0px;
+    }
+
+
+    .hostingPopularCard {
+        width: 100%;
+
+    }
+
+ 
+
+
+
+
+
 
     footer {
         display: flex;
@@ -492,11 +559,6 @@ footer a:hover {
     footer li {
         margin: 50px;
     }
-
-
-
-
-
 
 }
 
