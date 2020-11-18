@@ -1,28 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
 
-
+/*
 html {
-    max-width:  1440px;
-    height: 100%;
-    margin: auto;
+max-width:  1440px;
+height: 100%;
+margin: auto;
 }
+*/
 
 body {
     font-family: 'Raleway', sans-serif;
     background: white;
+    margin: 0px;
+}
+
+main, header{
+    max-width:  1440px;
+    margin: auto;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-left: 4%;
-    margin-right: 4%;
+    margin: 3% 4% 2% 4%;
 }
 
 #logo img {
     width: 100%;
 }
+
+h1{
+    font-size: 1.2em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.2em; 
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.1em;  
+}
+
 
 
 
@@ -37,7 +58,7 @@ nav ul {
 nav a {
     font-size: 1.0em;
     color: #181818;
-    padding: 21px 35px 0px 35px;
+    padding: 49px 35px 0px 35px;
     text-decoration: none;
 }
 
@@ -66,10 +87,14 @@ Form {
     max-width: 100%;
 }
 
+.baseLine {
+    margin: 8px 0px 20px 0px;
+}
+
 .fa-map-marker-alt:before {
     background: #f2f2f2;
-    padding: 13px 13px 13px 20px;
-    border-radius: 30% 0% 0% 30%;
+    padding: 15px 15px 15px 20px;
+    border-radius: 15px 0 0 15px;
 }
 
 input[type=text] {
@@ -77,35 +102,93 @@ input[type=text] {
     border-bottom: 2px solid #f2f2f2;
     border-left: none;
     border-right:none;
-    padding: 13px 13px 13px 20px;
+    padding: 15px 15px 15px 25px;
+}
+
+::placeholder {
+    font-weight: bold;
+    color: #181818;
+}
+
+button {
+    background: #0065FC;
+    padding: 15px 20px 15px 15px;
+    border-radius: 0 15px 15px 0;
+    appearance: none;
+    color: white;
+    font-weight: bold;
+    border-style: none;
 }
 
 .searchFilters {
     display: flex;
     align-items: center;
+    margin: 30px 0px 24px 0px;
 }
 
 
-.buttonCircleFilter{
-  background: #deebff;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
+.buttonFilter {
     display: flex;
-  justify-content: center;
-  align-items: center;
+    align-items: center;
+    height: 46px;
+    border: 2px solid #f2f2f2;
+    border-radius: 26px 26px 26px 26px;
+    border-left: none;
+    margin-left: 20px;
+}
+
+.buttonFilter a {
+    color: #181818;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 17px;
+    font-size: 1.1em; 
+    font-weight: bold;
+}
+
+.buttonCircleFilter{
+    background: #deebff;
+    border-radius: 26px 26px 26px 26px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 } 
 
 .buttonCircleFilter i {
     color: #0065FC;
 }
 
+.searchInfo{
+    display: flex;
+    align-items: center;
+}
+
+.infoCircle {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #f2f2f2;
+    margin-right: 10px;
+}
+
+.infoCircle i {
+    color: #0065FC;
+}
+
+
 
 /*--------- Main ---------*/
 
-Main {
-    margin-left: 4%;
-    margin-right: 4%;
+main {
+
+    margin: 0% 4% 0% 4%;
+    display: flex;
+    justify-content: space-between;
 }
 
 figure {
@@ -114,9 +197,10 @@ figure {
 
 .hosting {
     width: 60%;
-    padding: 15px 40px 20px 40px;
+    padding: 46px 40px 20px 40px;
     background-color: #f2f2f2;
     border-radius: 25px 25px 25px 25px;
+    margin: 24px 0px 0px 0px;
 }
 
 .hostingGrid {
@@ -127,7 +211,7 @@ figure {
 }
 
 .hostingGrid article {
-    margin: 0px 0px 40px 0px;
+    margin: 25px 0px 0px 0px;
 }
 
 .hostingCard {
@@ -183,17 +267,14 @@ figure {
 aside {
     float: right;
     width: 25%;
-    padding: 15px 40px 20px 40px;
+    padding: 46px 40px 20px 40px;
     background-color: #f2f2f2;
     border-radius: 25px 25px 25px 25px;
+    margin: 24px 0px 0px 0px;
 }
 
-section{
-    display: flex;
-    justify-content: space-between;
-}
 
-aside h1{
+aside h2{
     display: flex;
     justify-content: space-between;
 }
@@ -229,14 +310,21 @@ aside h1{
 
 .hostingRating {
     margin: 7px 10px 7px 10px;
+
 }
+
+.hostingPopularInfo .hostingRating {
+    position:absolute;
+    bottom: 0;
+} 
 
 .hostingPopularInfo {
     float: right;
+    position: relative;
 }
 
 .hostingPopularGrid article {
-    margin: 0px 0px 40px 0px;
+    margin: 25px 0px 0px 0px;
 }
 
 .hostingPopularTitle {
@@ -250,12 +338,37 @@ aside h1{
 
 .activity {
     width: 100%;
-    margin: 40px 0px 0px 0px;
+    margin: 40px 4% 0% 4%;
 }
 
-.activityCard{
-    width: 23%;
-    height: 100%;
+.activityGrid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0 0 0;
+}
+
+.activityGridsmall {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.activityGridsmallRight{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0% 3% 0% 0%;
+    position: relative;
+}
+
+.activityGridBig {
+    width: 100%;
+    margin-right: 3%;
+}
+
+.activityCard {
+    width: 100%;
     background-color: white;
     border-radius: 25px;
     box-shadow: 0 0 16px #0000002e;
@@ -282,6 +395,30 @@ aside h1{
     font-weight: bold;
 }
 
+.column1 img {
+    height: 390px;
+}
+
+.column2 img {
+    height: 180px;  
+}
+
+.column3 img {
+    height: 110px;
+}
+
+.column4 img {
+    height: 390px;
+}
+
+.column5 img {
+    height: 140px;
+}
+
+.column6 img {
+    height: 150px;
+}
+
 
 
 
@@ -291,7 +428,9 @@ footer {
     background-color: #F2F2F2;
     width: 100%;
     display: flex;
-    
+    margin: 48px 0 0 0;
+    padding: 48px 0 50px 0;
+
 }
 
 footer ul {
@@ -299,7 +438,6 @@ footer ul {
     list-style-type: none; 
     padding: 0px;
     margin: 0% 4% 0% 4%;
-
 }
 
 footer a {
@@ -310,6 +448,56 @@ footer a {
 
 footer a:hover {
     color: #0065FC;
+}
+
+
+
+@media (min-width: 768px) {
+}
+
+
+
+
+@media (max-width: 576px) {
+
+    h1{
+        font-size: 1.4em;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 1.4em; 
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 1.5em;  
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    footer ul {
+        width: 100%;
+    }
+
+    footer li a {
+        font-size: 1.5em; 
+
+    }
+
+    footer li {
+        margin: 50px;
+    }
+
+
+
+
+
+
 }
 
 
