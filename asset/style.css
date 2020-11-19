@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
 
-/*
-html {
-max-width:  1440px;
-height: 100%;
-margin: auto;
-}
-*/
+
+
+
+/*--------------- BASE ---------------*/
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -14,7 +11,7 @@ body {
     margin: 0px;
 }
 
-main, header{
+main header{
     max-width:  1440px;
     margin: auto;
 }
@@ -47,8 +44,7 @@ h3 {
 
 
 
-
-/*--------- Navigation ---------*/
+/*--------- NAVIGATION ---------*/
 
 nav ul {
     list-style-type: none;
@@ -85,7 +81,6 @@ nav a:hover {
 
 Form {
     max-width: 100%;
-    display: flex;
 }
 
 .baseLine {
@@ -183,11 +178,11 @@ button {
 
 
 
+
 /*--------- Main ---------*/
 
 main {
-
-    margin: 0% 4% 0% 4%;
+    margin: 0 4% 0% 4%;
     display: flex;
     justify-content: space-between;
 }
@@ -311,7 +306,6 @@ aside h2{
 
 .hostingRating {
     margin: 7px 10px 7px 10px;
-
 }
 
 .hostingPopularInfo .hostingRating {
@@ -338,34 +332,19 @@ aside h2{
 /*--------- Activity ---------*/
 
 .activity {
-    width: 100%;
     margin: 40px 4% 0% 4%;
 }
 
-.activityGrid {
+.activity ul {
+    list-style-type: none;
+    padding: 0px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 25px 0 0 0;
 }
 
-.activityGridsmall {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.activityGridsmallRight{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0% 3% 0% 0%;
-    position: relative;
-}
-
-.activityGridBig {
-    width: 100%;
-    margin-right: 3%;
+.activity ul li {
+    width: 23%;
+    position:relative;   
 }
 
 .activityCard {
@@ -376,7 +355,7 @@ aside h2{
     transition-duration: 0.1s;
     cursor: pointer;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
 
 .activityCard:hover {
@@ -408,6 +387,12 @@ aside h2{
     height: 110px;
 }
 
+.bottomAlign{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
 .column4 img {
     height: 390px;
 }
@@ -431,7 +416,6 @@ footer {
     display: flex;
     margin: 48px 0 0 0;
     padding: 48px 0 50px 0;
-
 }
 
 footer ul {
@@ -453,35 +437,142 @@ footer a:hover {
 
 
 
-@media  (min-width: 768px) {
+
+@media  (max-width: 1300px) {
+
+
+    /*--------- Filtre ---------*/
+
+    .searchFilters {
+        flex-wrap: wrap;
+    }
+
+    /*--------- Main ---------*/
+
+    main {
+        margin: 0 4% 0% 4%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hosting {
+        width: auto;
+    }
+
+    /*--------- Aside ---------*/
+
+    aside {
+        width: auto;
+
+    }
+
+    .hostingPopularCard {
+        width: auto;  
+    }
+
+    .hostingPopularCard img {
+        width: 200px;
+    }
 }
 
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media  (max-width: 800px) {
 
-    h1{
-        font-size: 1.4em;
+    /*--------- Activity ---------*/
+
+    .activity ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .activity {
+        margin: 40px 4% 0% 4%;
+    }
+
+    .activity ul li {
+        width: 100%;
+        position:relative; 
+        padding-top: 25px;   
+    }
+    
+    .activityCard img {
+        height: 134px;
+    }
+
+    .bottomAlign{
+        position: static;
+        padding-top: 25px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+
+    /*--------- base ---------*/
+    h1 {
+        font-size: 1.3em;
         margin: 0;
     }
 
     h2 {
-        font-size: 1.4em; 
+        font-size: 1.3em; 
         margin: 0;
     }
 
     h3 {
-        font-size: 1.5em;  
+        font-size: 1.3em;  
     }
 
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 3% 4% 2% 4%;
+    }
+
+    #logo img {
+        width: 95px;
+    }
+
+    /*--------- Navigation ---------*/
+
+    nav ul {
+        list-style-type: none;
+        display: none;
+    }
+
+    nav a {
+        font-size: 1.0em;
+        color: #181818;
+        padding: 49px 35px 10px 35px;
+        text-decoration: none;
+        border-bottom: 3px solid #f2f2f2;
+    }
+
+    nav a:hover {
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
+    }
+
+    #signup {
+        font-weight: bold;
+        border-top: none;
+        color: #0065FC;
+        border-bottom: none;
+    }
 
 
     .searchFilters {
         flex-wrap:wrap;
         margin: 30px 0px 24px 0px;
     }
-
 
     /*--------- Main ---------*/
 
@@ -510,13 +601,9 @@ footer a:hover {
 
 
     .hostingCard {
-        width: 100%;
+        width: auto;
 
     }
-
-
-
-
 
     /*--------- Aside ---------*/
 
@@ -530,16 +617,42 @@ footer a:hover {
 
 
     .hostingPopularCard {
-        width: 100%;
-
+        width: auto;
     }
 
- 
+    /*--------- Activity ---------*/
+
+    .activity ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
 
 
+    .activity {
+        margin: 40px 4% 0% 4%;
+    }
 
 
+    .activity ul li {
+        width: 100%;
+        position:relative; 
+        padding-top: 25px;   
+    }
+
+
+
+    .activityCard img {
+        height: 134px;
+    }
+
+    .bottomAlign{
+        position: static;
+        padding-top: 25px;
+    }
+
+/*--------- Footer ---------*/
 
     footer {
         display: flex;
@@ -552,12 +665,8 @@ footer a:hover {
     }
 
     footer li a {
-        font-size: 1.5em; 
+        font-size: 1.3em; 
 
-    }
-
-    footer li {
-        margin: 50px;
     }
 
 }
