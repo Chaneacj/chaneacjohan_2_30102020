@@ -116,6 +116,11 @@ button {
     border-style: none;
 }
 
+.fa-search:before {
+    content: "\f002";
+    display: none;
+}
+
 .searchFilters {
     display: flex;
     align-items: center;
@@ -488,7 +493,7 @@ footer a:hover {
         flex-direction: column;
         justify-content: space-between;
     }
-    
+
     .activity {
         margin: 40px 4% 0% 4%;
     }
@@ -498,7 +503,7 @@ footer a:hover {
         position:relative; 
         padding-top: 25px;   
     }
-    
+
     .activityCard img {
         height: 134px;
     }
@@ -531,21 +536,23 @@ footer a:hover {
 
 
     header {
-        display: flex;
+        display: block;
         justify-content: space-between;
         align-items: flex-end;
-        margin: 3% 4% 2% 4%;
+        margin: 3% 0% 10% 0%;
     }
 
     #logo img {
         width: 95px;
+        margin-left: 4%;
     }
 
     /*--------- Navigation ---------*/
 
     nav ul {
         list-style-type: none;
-        display: none;
+        display: flex;
+        padding: 0px;
     }
 
     nav a {
@@ -566,6 +573,11 @@ footer a:hover {
         border-top: none;
         color: #0065FC;
         border-bottom: none;
+        padding: 0;
+        position: absolute;
+        top: 26px;
+        right: 0px;
+        margin-right: 4%;
     }
 
 
@@ -574,18 +586,71 @@ footer a:hover {
         margin: 30px 0px 24px 0px;
     }
 
+    /*--------- Filtre ---------*/
+
+    .fa-map-marker-alt:before {
+
+
+    }
+
+    .fa-search:before {
+        content: "\f002";
+        display: block;
+    }
+
+    .recherche-txt {
+        display: none;
+    }
+
+    button {
+        position: absolute;
+        right: 3%;
+        background: #0065FC;
+        padding: 17px 18px 17px 18px;
+        border-radius: 15px 15px 15px 15px;
+        appearance: none;
+        color: white;
+        font-weight: bold;
+        border-style: none;  
+    }
+
+    input[type=text] {
+        border-top: 2px solid #f2f2f2;
+        border-bottom: 2px solid #f2f2f2;
+        border-left: none;
+        border-right:none;
+        padding: 15px 15px 15px 25px;
+        width: 60%;
+    }
+
+    .searchFilters h2 {
+        padding-right: 200px;
+        margin-bottom: 6px;
+    }
+
+    .buttonFilter {
+    display: flex;
+    align-items: center;
+    height: 46px;
+    border: 2px solid #f2f2f2;
+    border-radius: 26px 26px 26px 26px;
+    border-left: none;
+    margin: 13px 10px 0 0; 
+}
+
+
     /*--------- Main ---------*/
 
     main {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: space-between;
         margin: 0% 0% 0% 0%;
     }
 
 
     .hosting {
-        width: 100%;
+        width: auto;
         padding: 4% 4% 4% 4%;
         background-color: white;
         border-radius: 0px 0px 0px 0px;
@@ -608,7 +673,7 @@ footer a:hover {
     /*--------- Aside ---------*/
 
     aside {
-        width: 100%;
+        width: auto;
         padding: 8% 4% 8% 4%;
         background-color: #f2f2f2;
         border-radius: 0px 0px 0px 0px;
@@ -628,20 +693,15 @@ footer a:hover {
         justify-content: space-between;
     }
 
-
-
     .activity {
         margin: 40px 4% 0% 4%;
     }
-
 
     .activity ul li {
         width: 100%;
         position:relative; 
         padding-top: 25px;   
     }
-
-
 
     .activityCard img {
         height: 134px;
@@ -652,7 +712,7 @@ footer a:hover {
         padding-top: 25px;
     }
 
-/*--------- Footer ---------*/
+    /*--------- Footer ---------*/
 
     footer {
         display: flex;
