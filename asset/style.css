@@ -611,31 +611,26 @@ footer a:hover {
         padding: 0px;
     }
 
-    nav a {
+    nav li {
         font-size: 1.0em;
         color: #181818;
         padding: 0px 0px 10px 0px;
         border-bottom: 3px solid #f2f2f2;
-        position: absolute;
         text-align: center;
         width: 50%;
-
     }
 
-    nav a:hover {
+    nav li:hover {
         border-bottom: 3px solid #0065FC;
     }
+    
+    nav a:hover{
+        border-top: 0;
+    }
 
-    nav a:active{
+    nav li:active{
         border-bottom: 3px solid #0065FC;
-    }
-
-    #hostingLink {
-        right: 0;
-    }
-
-    #activityLink {
-        left: 0;
+        border-top: 0;
     }
 
     #signup {
@@ -646,6 +641,10 @@ footer a:hover {
         right: 0px;
         margin-right: 5%;
         text-align: right;
+    }
+    
+    #signup  a {
+        color : #0065FC;
     }
 
 
