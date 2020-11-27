@@ -41,6 +41,11 @@ h3 {
     font-size: 1.1em;  
 }
 
+h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
 
 
 
@@ -334,6 +339,10 @@ aside h2{
 }
 
 .hostingPopularCard p {
+    margin: 7px 10px 0 10px;
+}
+
+.hostingPopularCard h4 {
     margin: 7px 10px 0 10px;
 }
 
