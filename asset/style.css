@@ -44,6 +44,7 @@ h3 {
 
 
 
+
 /*--------- NAVIGATION ---------*/
 
 nav ul {
@@ -152,8 +153,6 @@ button {
     align-items: center;
     height: 46px;
     border: 2px solid white;
-    margin-left: 0 20px  0;
-
 }
 
 .button {
