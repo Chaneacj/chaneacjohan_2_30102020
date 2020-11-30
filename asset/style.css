@@ -179,6 +179,12 @@ button {
     font-weight: bold;
 }
 
+.buttonFilter a:hover {
+    color: #0065FC;
+}
+
+
+
 .buttonCircleFilter{
     background: #deebff;
     border-radius: 26px 26px 26px 26px;
@@ -229,7 +235,7 @@ figure {
     margin: 0px;
 }
 
-.hosting {
+#hosting {
     width: 60%;
     padding: 46px 40px 20px 40px;
     background-color: #f2f2f2;
@@ -373,18 +379,18 @@ aside h2{
 
 /*--------- Activity ---------*/
 
-.activity {
+#activity {
     margin: 40px 4% 0% 4%;
 }
 
-.activity ul {
+#activity ul {
     list-style-type: none;
     padding: 0px;
     display: flex;
     justify-content: space-between;
 }
 
-.activity ul li {
+#activity ul li {
     width: 23%;
     position:relative;   
 }
@@ -509,7 +515,7 @@ footer a:hover {
         flex-direction: column;
     }
 
-    .hosting {
+    #hosting {
         width: auto;
     }
 
@@ -565,11 +571,11 @@ footer a:hover {
 
     /*--------- Activity ---------*/
 
-    .activity ul {
-      flex-direction: column;
+    #activity ul {
+        flex-direction: column;
     }
 
-    .activity ul li {
+    #activity ul li {
         width: 100%;
         position:relative; 
         padding-top: 25px;   
@@ -580,9 +586,9 @@ footer a:hover {
     }
 
     .activityCard  {
-       height: auto; 
+        height: auto; 
     }
-    
+
 
     .bottomAlign{
         position: static;
@@ -689,10 +695,10 @@ footer a:hover {
     }
 
     button {
-       left: -20px;
+        left: -20px;
         width: 50px;
         height: 50px;
-    
+
         border-radius: 15px 15px 15px 15px;
     }
 
@@ -730,7 +736,7 @@ footer a:hover {
     }
 
 
-    .hosting {
+    #hosting {
         width: auto;
         padding: 10% 5% 4% 5%;
         background-color: white;
@@ -776,15 +782,15 @@ footer a:hover {
 
     /*--------- Activity ---------*/
 
-    .activity ul {
+    #activity ul {
         flex-direction: column;
     }
 
-    .activity {
+    #activity {
         margin: 43px 5% 0% 5%;
     }
 
-    .activity ul li {
+    #activity ul li {
         width: 100%;
         padding-top: 25px;   
     }
